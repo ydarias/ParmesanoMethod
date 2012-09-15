@@ -2,7 +2,7 @@ var Parmesano = Parmesano || {};
 
 Parmesano.Router = Backbone.Router.extend({
 
-    _dependencies_: ['titleBarView'],
+    _dependencies_: ['titleBarView', 'lateralBarView', 'activityInventoryView'],
 
     routes: {
         "": "initApp"
@@ -10,5 +10,7 @@ Parmesano.Router = Backbone.Router.extend({
 
     initApp: function() {
         this.titleBarView.render();
+        this.lateralBarView.render();
+        this.activityInventoryView.render();
     }
 });

@@ -36,4 +36,13 @@
     Handlebars.registerHelper('decimal', function(amount) {
         return accounting.formatNumber(amount, 2, ".", ",");
     });
+
+    Handlebars.registerHelper('parmesanos', function(duration) {
+        var output = '';
+        for (var i = 0; i < duration; i++) {
+            output += '<span class="parmesano"></span>';
+        }
+        return output;
+    });
+
 })();
