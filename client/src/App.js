@@ -7,11 +7,6 @@ $(function() {
     injection.register("lateralBarView", Parmesano.LateralBarView, {el : '#lateralBarAttachmentPoint'});
     injection.register("activityInventoryView", Parmesano.ActivityInventoryView, {el : '#workbenchAttachmentPoint'});
 
-    injection.registry.tasks.add([
-        {description: 'aaa', duration: 2},
-        {description: 'bbb', duration: 4}
-    ]);
-
     Parmesano.router = injection.register("router", Parmesano.Router);
 
     Backbone.history.start();

@@ -15,3 +15,7 @@ a#newTask-button {
     float: right;
     margin-bottom: 10px;
 }
+
+th.right-side, td.right-side {
+    border-left: none;
+}

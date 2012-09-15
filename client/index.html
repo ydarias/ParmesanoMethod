@@ -70,8 +70,8 @@
                 <div class="controls">
                     <div class="input-append">
                         <input id="durationInput" class="span2" id="appendedInputButtons" size="16" type="text" value="1" />
-                        <button id="lessDurationButton" class="btn" type="button"><i class="icon-minus" /></button>
-                        <button id="moreDurationButton" class="btn" type="button"><i class="icon-plus" /></button>
+                        <button id="lessDuration-button" class="btn" type="button"><i class="icon-minus" /></button>
+                        <button id="moreDuration-button" class="btn" type="button"><i class="icon-plus" /></button>
                     </div>
                 </div>
             </div>
@@ -85,15 +85,15 @@
         </form>
     </div>
 
-    <table class="table">
+    <table class="table table-bordered">
         <tr>
             <th>{{t "label.description"}}</th>
-            <th></th>
+            <th class="right-side"></th>
         </tr>
         {{#each tasks}}
         <tr>
             <td>{{description}}</td>
-            <td>
+            <td class="right-side">
                 {{{parmesanos duration}}}
             </td>
         </tr>
@@ -122,6 +122,7 @@
 <script type="text/javascript" src="src/helpers/HTML.js"></script>
 <script type="text/javascript" src="src/Model.js"></script>
 <script type="text/javascript" src="src/View.js"></script>
+<script type="text/javascript" src="src/views/ActivityInventoryView.js"></script>
 <script type="text/javascript" src="src/Router.js"></script>
 <script type="text/javascript" src="src/App.js"></script>
 
