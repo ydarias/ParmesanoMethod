@@ -4,5 +4,14 @@ span.parmesano {
     display: block;
     height: 24px;
     width: 24px;
-    float: left;
+    float: right;
+}
+
+input#descriptionInput {
+    width: 90%;
+}
+
+a#newTask-button {
+    float: right;
+    margin-bottom: 10px;
 }

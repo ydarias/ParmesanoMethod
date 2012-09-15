@@ -52,7 +52,44 @@
 </script>
 
 <script id="activityInventoryTemplate" type="text/x-handlebars-template">
-    <table class="table table-bordered">
+    <a id="newTask-button" href="#" class="btn btn-small btn-primary">
+        <i class="icon-plus icon-white"></i> {{t "label.newTask"}}
+    </a>
+
+    <div id="newTask-form" class="row-fluid" style="display: none;">
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">{{t "label.description"}}</label>
+                <div class="controls">
+                    <input id="descriptionInput" type="text" placeholder="{{t "help.typeDescription"}}">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">{{t "label.duration"}}</label>
+                <div class="controls">
+                    <div class="input-append">
+                        <input id="durationInput" class="span2" id="appendedInputButtons" size="16" type="text" value="1" />
+                        <button id="lessDurationButton" class="btn" type="button"><i class="icon-minus" /></button>
+                        <button id="moreDurationButton" class="btn" type="button"><i class="icon-plus" /></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <a id="submitNewTask-button" class="btn btn-primary"><i class="icon-ok icon-white"></i> {{t "label.save"}}</a>
+                    <a id="cancelNewTask-button" class="btn"><i class="icon-remove"></i> {{t "label.cancel"}}</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>{{t "label.description"}}</th>
+            <th></th>
+        </tr>
         {{#each tasks}}
         <tr>
             <td>{{description}}</td>

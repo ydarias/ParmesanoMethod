@@ -9,7 +9,15 @@
                     "menu": "Menu",
                     "activityInventory": "Activity Inventory",
                     "todoToday": "ToDo today",
-                    "timer": "Timer"
+                    "timer": "Timer",
+                    "description": "Description",
+                    "duration": "Duration",
+                    "newTask": "New Task",
+                    "save": "Save",
+                    "cancel": "Cancel"
+                },
+                "help": {
+                    "typeDescription": "Task description ..."
                 }
             }
         },
@@ -23,7 +31,15 @@
                     "menu": "Menú",
                     "activityInventory": "Inventario de actividad",
                     "todoToday": "Tareas para hoy",
-                    "timer": "Reloj"
+                    "timer": "Reloj",
+                    "description": "Descripción",
+                    "duration": "Duración",
+                    "newTask": "Nueva tarea",
+                    "save": "Guardar",
+                    "cancel": "Cancelar"
+                },
+                "help": {
+                    "typeDescription": "Descripción de la tarea ..."
                 }
             }
         }
