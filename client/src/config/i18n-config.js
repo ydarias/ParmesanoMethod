@@ -14,7 +14,8 @@
                     "duration": "Duration",
                     "newTask": "New Task",
                     "save": "Save",
-                    "cancel": "Cancel"
+                    "cancel": "Cancel",
+                    "selectTasks": "Select Tasks"
                 },
                 "help": {
                     "typeDescription": "Task description ..."
@@ -36,7 +37,8 @@
                     "duration": "Duración",
                     "newTask": "Nueva tarea",
                     "save": "Guardar",
-                    "cancel": "Cancelar"
+                    "cancel": "Cancelar",
+                    "selectTasks": "Seleccionar tareas"
                 },
                 "help": {
                     "typeDescription": "Descripción de la tarea ..."

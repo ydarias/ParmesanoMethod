@@ -52,9 +52,11 @@
 </script>
 
 <script id="activityInventoryTemplate" type="text/x-handlebars-template">
-    <a id="newTask-button" href="#" class="btn btn-small btn-primary">
-        <i class="icon-plus icon-white"></i> {{t "label.newTask"}}
-    </a>
+    <div id="action-buttons" class="btn-group">
+        <a id="newTask-button" href="#" class="btn btn-small btn-primary">
+            <i class="icon-plus icon-white"></i> {{t "label.newTask"}}
+        </a>
+    </div>
 
     <div id="newTask-form" class="row-fluid" style="display: none;">
         <form class="form-horizontal">

@@ -25,7 +25,7 @@ Parmesano.ActivityInventoryView = Backbone.View.extend({
     displayNewTaskForm: function() {
         console.log("Showing new task form ...");
 
-        $('#newTask-button').hide(function() {
+        $('#action-buttons').hide(function() {
             $('#newTask-form').show("slow");
         });
     },
@@ -36,7 +36,7 @@ Parmesano.ActivityInventoryView = Backbone.View.extend({
         $('#newTask-form').hide("slow", function() {
             $('#descriptionInput').val('');
             $('#durationInput').val(1);
-            $('#newTask-button').show();
+            $('#action-buttons').show();
         });
     },
 

@@ -11,7 +11,7 @@ input#descriptionInput {
     width: 90%;
 }
 
-a#newTask-button {
+div#action-buttons {
     float: right;
     margin-bottom: 10px;
 }
