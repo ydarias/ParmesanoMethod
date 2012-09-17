@@ -22,3 +22,14 @@ Parmesano.LateralBarView = Backbone.View.extend({
 
 });
 
+Parmesano.TaskView = Backbone.View.extend({
+
+    _mapTask:function (task) {
+        return {
+            cid:task.cid,
+            description:task.get('description'),
+            duration:task.get('duration')
+        };
+    }
+
+});

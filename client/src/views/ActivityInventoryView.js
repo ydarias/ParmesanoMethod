@@ -1,6 +1,6 @@
 var Parmesano = Parmesano || {};
 
-Parmesano.ActivityInventoryView = Backbone.View.extend({
+Parmesano.ActivityInventoryView = Parmesano.TaskView.extend({
 
     _dependencies_: ['tasks'],
 
@@ -16,7 +16,7 @@ Parmesano.ActivityInventoryView = Backbone.View.extend({
         console.log("Rendering activity inventory view ...");
 
         var context = {
-            tasks: this.tasks.toJSON()
+            tasks: this.tasks.map(this._mapTask)
         };
         var html = Parmesano.HTML('#activityInventoryTemplate', context);
         this.$el.html(html);
@@ -62,7 +62,8 @@ Parmesano.ActivityInventoryView = Backbone.View.extend({
         var description = $('#descriptionInput').val();
         var duration = parseInt($('#durationInput').val(), 10);
 
-        this.tasks.add({description: description, duration: duration});
+        var parmesano = new Parmesano.Task({description: description, duration: duration});
+        this.tasks.add(parmesano);
 
         this.render();
     }
