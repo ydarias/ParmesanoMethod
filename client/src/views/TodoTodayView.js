@@ -19,6 +19,10 @@ Parmesano.TodoTodayView = Parmesano.TaskView.extend({
         };
         var html = Parmesano.HTML('#todoTodayTemplate', context);
         this.$el.html(html);
+
+        $('#activityInventoryLink').removeClass('active');
+        $('#todoTodayLink').addClass('active');
+        $('#timerLink').removeClass('active');
     },
 
     displaySelectTasksForm: function() {
@@ -41,12 +45,11 @@ Parmesano.TodoTodayView = Parmesano.TaskView.extend({
         console.log("Storing selected tasks ...");
 
         var self = this;
-        $('#selectedTasks input:checked').each(function() {
+        $('#selectTasks-form input:checked').each(function() {
             var id = $(this).attr('id');
             self.todayTasks.add(self.tasks.getByCid(id));
-
         });
-        
+
         this.render();
     }
 

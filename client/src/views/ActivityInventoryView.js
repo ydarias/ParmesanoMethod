@@ -20,6 +20,10 @@ Parmesano.ActivityInventoryView = Parmesano.TaskView.extend({
         };
         var html = Parmesano.HTML('#activityInventoryTemplate', context);
         this.$el.html(html);
+
+        $('#activityInventoryLink').addClass('active');
+        $('#todoTodayLink').removeClass('active');
+        $('#timerLink').removeClass('active');
     },
 
     displayNewTaskForm: function() {

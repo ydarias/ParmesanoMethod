@@ -44,16 +44,16 @@
     <div class="well sidebar-nav">
         <ul class="nav nav-list">
             <li class="nav-header">{{t "label.menu"}}</li>
-            <li class="active"><a href="#/activityInventory">{{t "label.activityInventory"}}</a></li>
-            <li><a href="#/todoToday">{{t "label.todoToday"}}</a></li>
-            <li><a href="#/timer">{{t "label.timer"}}</a></li>
+            <li id="activityInventoryLink"><a href="#/activityInventory">{{t "label.activityInventory"}}</a></li>
+            <li id="todoTodayLink"><a href="#/todoToday">{{t "label.todoToday"}}</a></li>
+            <li id="timerLink"><a href="#/timer">{{t "label.timer"}}</a></li>
         </ul>
     </div>
 </script>
 
 <script id="activityInventoryTemplate" type="text/x-handlebars-template">
     <div id="action-buttons" class="btn-group">
-        <a id="newTask-button" href="#" class="btn btn-small btn-primary">
+        <a id="newTask-button" class="btn btn-small btn-primary">
             <i class="icon-plus icon-white"></i> {{t "label.newTask"}}
         </a>
     </div>
@@ -105,7 +105,7 @@
 
 <script id="todoTodayTemplate" type="text/x-handlebars-template">
     <div id="action-buttons" class="btn-group">
-        <a id="selectTasks-button" href="#/todoToday" class="btn btn-small btn-primary">
+        <a id="selectTasks-button" class="btn btn-small btn-primary">
             <i class="icon-edit icon-white"></i> {{t "label.selectTasks"}}
         </a>
     </div>
