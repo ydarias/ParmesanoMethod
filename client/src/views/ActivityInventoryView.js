@@ -2,7 +2,7 @@ var Parmesano = Parmesano || {};
 
 Parmesano.ActivityInventoryView = Parmesano.TaskView.extend({
 
-    _dependencies_: ['tasks'],
+    _dependencies_: ['tasks', ],
 
     events: {
         'click #newTask-button': "displayNewTaskForm",
@@ -70,6 +70,15 @@ Parmesano.ActivityInventoryView = Parmesano.TaskView.extend({
         this.tasks.add(parmesano);
 
         this.render();
+
+        this._playDing();
+    },
+
+    _playDing: function playDing() {
+        console.log("Reproducing ding sound ...");
+
+        var snd = new Media("/android_asset/www/client/media/audio/applause_2.mp3");
+        snd.play();
     }
 
 });
